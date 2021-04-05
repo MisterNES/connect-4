@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   let errors = [];
 
-  const checkPassword = (event) => {
+  const checkPassword = () => {
     if (password.value !== passwordConfirm.value) {
       errors.push("Passwords must match");
     }
@@ -38,13 +38,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   };
 
-  const checkEmail = (event) => {
+  const checkEmail = () => {
     if (!email.value.includes("@")) {
       errors.push("Must provide a valid email");
     }
   };
 
-  const checkInputs = (event) => {
+  const checkInputs = () => {
     let myInputs = [password, passwordConfirm, email, name];
 
     for (let i = 0; i < myInputs.length; i++) {
@@ -75,8 +75,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
         errorsContainer.appendChild(li);
       });
     } else {
-      // body.innerHTML = '<h2>your form was submitted</h2>'
-      body.innerText = "your form was submitted";
+      body.innerHTML = '<h2>your form was submitted</h2>'
+      // body.innerText = "your form was submitted";
     }
   });
 });

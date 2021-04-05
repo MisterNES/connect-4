@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let innerDiv = document.getElementById("inner");
 
   innerDiv.addEventListener("click", (event) => {
-    // event.stopPropagation();
+    event.stopPropagation();
     console.log("inner div event triggered");
   });
 
   middleDiv.addEventListener("click", (event) => {
-    event.stopPropagation();
-    // event.stopImmediatePropagation();
+    // event.stopPropagation();
+    event.stopImmediatePropagation();
     console.log("first middle div event triggered");
   });
 

@@ -7,10 +7,10 @@
 // CANNOT DO
 // jsonArray.forEach(el => console.log(el))
 
-// let jsonArray = '[1, "hello, \\"world\\"", 3.14, { "id": 17 }]';
-// // console.log(jsonArray);
-// let deserializedArray = JSON.parse(jsonArray);
-// console.log(deserializedArray);
+let jsonArray = '[1, "hello, \\"world\\"", 3.14, { "id": 17 }]';
+console.log(jsonArray);
+let deserializedArray = JSON.parse(jsonArray);
+console.log(deserializedArray);
 
 // // CAN DO
 // deserializedArray.forEach((el) => console.log(el));

@@ -19,6 +19,7 @@ window.addEventListener("DOMContentLoaded", event => {
 		console.log('event.currentTarget: ', event.currentTarget);
 		console.log('event.target: ', event.target);
 		console.log('event.target.id: ', event.target.id)
+		console.log('event.target.className', event.target.className)
 	})
 
 });

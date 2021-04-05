@@ -1,7 +1,7 @@
 // ARROW FUNCTIONS AND CONTEXT
 
 let user = {
-  name: "sergey",
+  name: "kristen",
   changeNameFunc: function () {
     console.log("value of this where arrow func is defined:\n", this);
     return (newName) => {
@@ -55,8 +55,8 @@ changeName("bob");
 
 // NO BINDING WITH ARROW FUNCTIONS
 
-// let bodhi = {
-// 	name: 'bodhi'
+// let badger = {
+// 	name: 'badger'
 // }
 
 // let noReturnName = () => {
@@ -64,12 +64,12 @@ changeName("bob");
 // }
 // // noReturnName() // undefined
 
-// let notBound = noReturnName.bind(bodhi);
+// let notBound = noReturnName.bind(badger);
 // // notBound(); // undefined
 
 // let returnName = function() {
 // 	console.log(this.name);
 // }
 
-// let bound = returnName.bind(bodhi);
-// bound() // bodhi
+// let bound = returnName.bind(badger);
+// bound() // badger

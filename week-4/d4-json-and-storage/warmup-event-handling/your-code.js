@@ -7,18 +7,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // - append the LI to the UL with id 'todo-list'
   // - reset the value of the INPUT to be an empty string
 
-  let form = document.getElementById("todo-form");
-  form.addEventListener("submit", (event) => {
+  const form = document.getElementById('todo-form');
+  const input = document.getElementById('user-input');
+  const ul = document.getElementById('todo-list');
+
+  form.addEventListener('submit', event => {
     event.preventDefault();
-    let li = document.createElement("li");
-    let input = document.getElementById("user-input");
-    if (!input.value) {
-      return;
-    }
-    console.log(input.innerText);
+    const li = document.createElement('li');
     li.innerText = input.value;
-    let ul = document.getElementById("todo-list");
     ul.appendChild(li);
-    input.value = "";
-  });
+    input.value = '';
+
+  })
 });

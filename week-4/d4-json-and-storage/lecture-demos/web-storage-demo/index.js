@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // must serialize value before storing in local storage
   let serializedValue = JSON.stringify(value);
   sessionStorage.setItem(key, serializedValue);
+  // localStorage.setItem(key, serializedValue)
 
   // not going to work
   // console.log(JSON.parse("<h2>gobeldygoop</h2>"));

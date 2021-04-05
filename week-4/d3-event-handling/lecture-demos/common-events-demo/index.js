@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   showDogButton.addEventListener("click", (event) => {
     let img = document.createElement("img");
-    img.src = "dog-pic.jpg";
+    img.src = "./dog-pic.jpg";
 
     // img.id = 'some-id';
     // img.className = ''
@@ -38,19 +38,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // matches a color in the valid color's array, change the background
   // color of the div with id "my-div" to that color
 
-  let validColors = ["red", "blue", "green"];
+  let validColors = ["red", "blue", "green", "yellow", '#000000'];
 
   let input = document.getElementById("user-input");
   let colorDiv = document.getElementById("my-div");
 
   input.addEventListener("input", (event) => {
-    // console.log(event.target.value);
+    console.log(event.target.value);
 
     let value = event.target.value;
 
-    if (validColors.includes(value)) {
+    // if (validColors.includes(value)) {
       colorDiv.style.backgroundColor = value;
-    }
+    // }
   });
 
   // 4. pizza demo using classes
